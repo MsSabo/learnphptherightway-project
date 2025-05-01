@@ -39,15 +39,15 @@
             <tfoot>
                 <tr>
                     <th colspan="3">Total Income:</th>
-                    <td><!-- YOUR CODE --></td>
+                    <td><?php echo number_format($res[0], 2); ?></td>
                 </tr>
                 <tr>
                     <th colspan="3">Total Expense:</th>
-                    <td><!-- YOUR CODE --></td>
+                    <td><?php echo number_format($res[1], 2); ?></td>
                 </tr>
                 <tr>
                     <th colspan="3">Net Total:</th>
-                    <td><!-- YOUR CODE --></td>
+                    <td><?php echo number_format($res[2], 2); ?></td>
                 </tr>
             </tfoot>
         </table>
