@@ -1,13 +1,16 @@
 <?php
 
+declare(strict_types=1);
 
-spl_autoload_register(function($class){
-    $path = __DIR__ . '/../' . lcfirst(str_replace('\\', '/', $class) . '.php');
-    require $path;
-    var_dump($path);
-    echo '<br />Autoload <br />';
+//require_once '../App/PaymentGateway/Paddle/CustomerProfile.php';
+//require_once '../App/PaymentGateway/Paddle/Transaction.php';
+//require_once '../App/PaymentGateway/Stripe/Transaction.php';
+
+spl_autoload_register(function($class) {
+    var_dump($class);
 });
 
-use App\PaymentGateway\Puddle\Transaction;
 
+use App\PaymentGateway\Paddle\Transaction;
 var_dump(new Transaction());
+
